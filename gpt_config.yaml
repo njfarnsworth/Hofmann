@@ -1,0 +1,19 @@
+exp: MinimalPair
+
+mode:
+    - evaluate
+    - analyze
+models:
+  hf_causal_model:
+    - openai-community/gpt2
+    
+predfpath:  /home/nfarnsworth/hoffman/predictions/gpt_pred_small.tsv
+datafpath:  /home/nfarnsworth/hoffman/mp_file_small.tsv
+resultsfpath:  /home/nfarnsworth/hoffman/results/gpt_pred_small.tsv
+
+device: cuda
+
+conditions: occupation
+
+save: by_word, by_pair, by_cond
+

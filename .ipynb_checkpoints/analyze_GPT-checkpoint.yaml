@@ -1,0 +1,18 @@
+exp: MinimalPair
+
+mode:
+    - evaluate
+    - analyze
+models:
+  hf_causal_model:
+    - openai-community/gpt2
+    
+predfpath: results
+datafpath: ../midterm/AAE_SAE_MP.tsv
+resultsfpath: ../midterm/results/GPT2_hoffmanagreement.tsv
+
+conditions: occupation
+
+device: cuda 
+
+save: by_word, by_pair, by_cond
